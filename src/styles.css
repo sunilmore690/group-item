@@ -1,0 +1,55 @@
+.dark {
+  background-color: #383a59;
+  color: white;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 600px;
+  padding-top: 30px;
+}
+
+.select-group {
+  display: flex;
+}
+.dark .select-group-item {
+}
+.select-group-item {
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.select-group-item-top {
+  padding-top: 5px;
+  height: 9px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.select-group-item.active {
+  background-color: #1867c0;
+  color: white;
+  font-weight: 400;
+}
+
+.select-group-item.active .select-group-item-top {
+  height: 20px;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /*   border-bottom: 15px solid red; */
+}
+.select-group-item-body {
+  line-height: 50px;
+  font-weight: 700;
+}
+.active .select-group-item-body {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+}
